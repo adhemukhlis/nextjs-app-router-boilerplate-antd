@@ -6,15 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fix": "yarn eslint --fix ./src --ext .js --ext .jsx",
+    "prettier-all": "yarn prettier --config .prettierrc --write ./src",
+    "dependencies-upgrade": "yarn yarn-upgrade-all"
   },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.2"
+    "next": "14.0.2",
+    "antd": "5.9.0"
   },
   "devDependencies": {
+    "@ant-design/cssinjs": "^1.17.2",
     "eslint": "^8",
-    "eslint-config-next": "14.0.2"
+    "eslint-config-next": "14.0.2",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.0.3",
+    "yarn-upgrade-all": "^0.7.2"
+  },
+  "yarn-upgrade-all": {
+    "ignore": [
+      "react",
+      "next",
+      "react-dom",
+      "antd"
+    ]
   }
 }
