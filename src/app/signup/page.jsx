@@ -1,10 +1,10 @@
 'use client'
-import { Button, Card, Checkbox, Col, Divider, Form, Input, Row, Typography } from 'antd'
+import { Button, Card, Col, Form, Input, Row, Typography } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
-const { Title, Text } = Typography
+const { Title } = Typography
 
 const SignUpPage = () => {
 	const [form] = Form.useForm()

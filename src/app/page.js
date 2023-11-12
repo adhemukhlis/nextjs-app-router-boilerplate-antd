@@ -1,7 +1,5 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { ConfigProvider } from 'antd'
 import theme from '@/theme/themeConfig'
-import { Button, ConfigProvider } from 'antd'
 
 export default function Home() {
 	return (
